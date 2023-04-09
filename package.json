@@ -1,0 +1,21 @@
+{
+  "name": "animated-canvas",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "encode": "ffmpeg -framerate 30 -i ./output/project/%06d.png -pix_fmt yuv420p ./output/anim.mp4",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "@motion-canvas/2d": "^3.5.1",
+    "@motion-canvas/core": "^3.4.0"
+  },
+  "devDependencies": {
+    "@motion-canvas/ui": "^3.5.0",
+    "@motion-canvas/vite-plugin": "^3.4.0",
+    "@types/node": "^18.15.11",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  }
+}
